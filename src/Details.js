@@ -31,7 +31,7 @@ export const Details = ({ name, height, eye_color, films, vehicles }) => {
             Películas:
             {filmList.map((e) => (
               <li>
-                <Link to={`/${encodeURI(e.title)}`}>{e.title}</Link>
+                <Link to={`/swapi-15/${encodeURI(e.title)}`}>{e.title}</Link>
               </li>
             ))}
           </ul>

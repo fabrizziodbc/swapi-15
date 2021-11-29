@@ -26,11 +26,11 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Names swCaracters={swCaracters} />} />
+        <Route path="/swapi-15" element={<Names swCaracters={swCaracters} />} />
         {swCaracters.map((e) => (
           <Route
             key={e.name}
-            path={`/${encodeURI(e.name)}`}
+            path={`/swapi-15/${encodeURI(e.name)}`}
             element={<Details {...e} />}
           />
         ))}

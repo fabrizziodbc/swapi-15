@@ -7,7 +7,7 @@ export const Names = ({ swCaracters }) => {
       {swCaracters.map((e) => (
         <li key={e.name}>
           {" "}
-          <Link to={`/${encodeURI(e.name)}`}>{e.name}</Link>
+          <Link to={`/swapi-15/${encodeURI(e.name)}`}>{e.name}</Link>
         </li>
       ))}
     </ul>
